@@ -15,14 +15,11 @@ To run the project, please use a command line the following:
 
 ## How to run , 
  - go to http://localhost:3000/
- - run command as is or add in new commands in format detailed below
-  
-  > I have uploaded a few sample files in the **<data/*>**
-  
- - npm test to run through a few scenarios
-
-Have deliberately chosen to stick to the KISS principle and avoid overengineering it.
-
+ - Enter No: of random points to generate
+or
+- go to http://localhost:3000/pi?points=VALUE 
+    ( replace VALUE with an integer)
+    
 # Description of Starts-at-60 Code Challenge
 
 Introduction
