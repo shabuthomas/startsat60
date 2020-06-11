@@ -49,7 +49,7 @@ Outputs the estimate of pi either visually or to the console, remembering that t
 Remember that this will only estimate the value of pi, so depending on the amount of random points entered it will be closer or further away from the real value of pi.
 
 Submission
-Please email your final source code to zack.corr@startsat60.com (cc rebecca.wilson@startsat60.com) with the subject line 'Programming test - <Your name>'.
+Please email your final source code to XXX with the subject line 'Programming test - <Your name>'.
 
 # Thank You, enjoyed doing this
 
