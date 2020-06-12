@@ -7,10 +7,10 @@ let GetRandomPoint = (min, max) => {
   return {x : val1, y: val2};
 };
 
-let isPointIncircle = (pt) => {
-  distance = Math.sqrt( (pt.x - radius)**2 + (pt.y - radius)**2)
+let isPointIncircle = (pt, circleradius) => {
+  distance = Math.sqrt( (pt.x - circleradius)**2 + (pt.y - circleradius)**2)
   // console.log('distance XX -> ', pt, distance);
-  return distance <= radius;
+  return distance <= circleradius;
 };
 
 let CalculatePi = (totalPoints) => {
@@ -24,7 +24,7 @@ let CalculatePi = (totalPoints) => {
 
       pointsInCircle = 0;
       allPoints.forEach(function(pt) {
-        if ( isPointIncircle(pt))
+        if ( isPointIncircle(pt, radius))
         {
           pointsInCircle++;
         }          
