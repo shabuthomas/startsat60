@@ -1,9 +1,7 @@
 let radius = 50;
 let squareSide = radius*2;
 
-let GetRandomPoint = () => {
-  min = 0;
-  max = squareSide;
+let GetRandomPoint = (min, max) => {
   val1 = Math.floor(Math.random() * (max - min) + min);
   val2 = Math.floor(Math.random() * (max - min) + min);
   return {x : val1, y: val2};
@@ -18,8 +16,10 @@ let isPointIncircle = (pt) => {
 let CalculatePi = (totalPoints) => {
     return new Promise((resolve, reject) => {
       allPoints = [];
+      min = 0;
+      max = squareSide;    
       while ( allPoints.length < totalPoints) {
-        allPoints.push(GetRandomPoint());
+        allPoints.push(GetRandomPoint(min, max));
       }
 
       pointsInCircle = 0;
